@@ -12,21 +12,34 @@ let cities = [{
     population: 2705994
   },
   {
-    location: [29.7604, -95.3698],
-    city: "Houston",
+    location: [30.2672, -97.7431],
+    city: "Austin",
     state: "TX",
-    population: 2325502
+    population: 2350000
   },
   {
-    location: [34.0522, -118.2437],
-    city: "Los Angeles",
+    location: [37.7749, -122.4194],
+    city: "San Fransisco Bay Area",
     state: "CA",
-    population: 3990456
+    population: 7753000
   },
   {
     location: [33.4484, -112.0740],
     city: "Phoenix",
     state: "AZ",
     population: 1660272
+  },
+  {
+    location: [27.9506, -82.4572],
+    city: "Tampa Bay Area",
+    state: "FL",
+    population: 3220000
+  },
+  {
+    location: [43.6532, -79.3832],
+    city: "Toronto",
+    state: "Canada",
+    population: 2930000    
   }
+
   ];

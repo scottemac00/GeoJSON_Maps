@@ -42,3 +42,9 @@ cityData.forEach(function(city) {
     "</h3>")
     .addTo(map);
    });
+
+   // Coordinates for each point to be used in a line
+   let line = [
+    [33.9416, -118.4085],
+    [37.6214, -122.3790]
+   ];
