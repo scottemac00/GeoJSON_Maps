@@ -2,7 +2,7 @@
 console.log("working");
 
 // Create the map object with a center and zoom level
-let map = L.map('mapid').setView([47.1164, -101.2996], 4);
+let map = L.map('mapid').setView([37.5, -122.5], 10);
 
 // Alternative method to using setView()
 // let map = L.map("mapid", {
@@ -56,3 +56,13 @@ let line = [
 L.polyline(line, {
     color: 'yellow'
 }).addTo(map);
+
+// Grabbing our GeoJSON data
+L.geoJSON(sanFranAirport, {
+    // We turn each feature into a marker on the map
+    onEachFeature: function(feature, layer) {
+        console.log(layer);
+        layer.bindPopup("<h2>" + feature.properties.faa + "</h2>");
+    }
+}).addTo(map);
+
