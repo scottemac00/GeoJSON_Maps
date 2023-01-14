@@ -33,14 +33,14 @@ let airportData = "https://raw.githubusercontent.com/scottemac00/GeoJSON_Maps/Ma
 // Grabbing our GeoJSON data
 d3.json(airportData).then(function(data) {
      console.log(data);
-//     // Creating a GeoJSON layer with the retrieved data
+     // Creating a GeoJSON layer with the retrieved data
      L.geoJSON(data, {
         // Turn each feature into a marker on the map
         onEachFeature: function(feature, layer) {
             console.log(layer);
             layer.bindPopup("<h2><hr> Airport Code: " + feature.properties.faa + "<h2> Airport: " + feature.properties.name + "</h2>");
         }
-     })
-}).addTo(map);
+     }).addTo(map);
+});
 
 
