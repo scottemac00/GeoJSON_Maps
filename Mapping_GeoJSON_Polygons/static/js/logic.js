@@ -34,7 +34,7 @@ let baseMaps = {
 // Create the map object with center, zoom level, and default layer
 let map = L.map("mapid", {
     center: [43.7, -79.3],
-    zoom: 2,
+    zoom: 11,
     layers: [satStreets]
 });
 
@@ -58,7 +58,7 @@ let torontoHoods = "https://raw.githubusercontent.com/scottemac00/GeoJSON_Maps/m
 d3.json(torontoHoods).then(function(data) {
      console.log(data);
     // Creating a GeoJSON layer with the retrieved data
-    L.geoJSON(data);
+    L.geoJSON(data).addTo(map);
 });    
 
 // // Create a style for the lines
