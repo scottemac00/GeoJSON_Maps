@@ -11,4 +11,4 @@ To complete this project, I used a URL for GeoJSON earthquake data from the USGS
 
 I used JavaScript and the D3.js library to retrieve the coordinates and magnitudes of the earthquakes from the GeoJSON data. I used the Leaflet library to plot the data on a Mapbox map through an API request and created interactivity for the earthquake data across three map layers.
 
-Deploying a secure server, open the ![HTML](Earthquake_Challenge/index.html) and enjoy the last seven days of world earthquake information!
+Deploying a secure server, open the [HTML](Earthquake_Challenge/index.html) and enjoy the last seven days of world earthquake information!
