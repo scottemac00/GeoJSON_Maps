@@ -120,6 +120,3 @@ d3.json(earthquakeData).then(function(data) {
 //             layer.bindPopup("<h2>Magnitude: " + feature.properties.mag + "<hr></h2>" + "<h2>Location: " + feature.properties.place + "</h2>");
 // }}).addTo(map);
 // });
-
-
-
