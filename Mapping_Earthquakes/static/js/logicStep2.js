@@ -94,4 +94,3 @@ d3.json(earthquakeData).then(function(data) {
 // }}).addTo(map);
 // });
 
-
